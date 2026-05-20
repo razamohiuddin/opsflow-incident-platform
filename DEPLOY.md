@@ -35,8 +35,8 @@ Do **not** commit `.env` files (root `.gitignore` excludes them).
 2. Connect your GitHub repo.
 3. Settings:
    - **Root Directory:** `server`
-   - **Build Command:** `npm install`
-   - **Start Command:** `npm start`
+   - **Build Command:** `npm install` or `npm install && npm run build` (both work; no TypeScript compile)
+   - **Start Command:** `npm start` (runs `node src/server.js` — **not** `dist/index.js`)
    - **Health Check Path:** `/health`
 4. Environment variables:
 

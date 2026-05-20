@@ -8,9 +8,11 @@
     "node": ">=18"
   },
   "scripts": {
+    "build": "node -e \"console.log('OpsFlow API: JavaScript backend — no compile step')\"",
     "dev": "nodemon src/server.js",
     "start": "node src/server.js",
-    "seed": "node src/scripts/seed.js"
+    "seed": "node src/scripts/seed.js",
+    "configure-atlas": "node scripts/configure-atlas.js"
   },
   "dependencies": {
     "bcryptjs": "^3.0.3",

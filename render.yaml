@@ -5,7 +5,8 @@ services:
     name: opsflow-api
     runtime: node
     rootDir: server
-    buildCommand: npm install
+    # Works with dashboard "npm install" or "npm install && npm run build"
+    buildCommand: npm install && npm run build
     startCommand: npm start
     healthCheckPath: /health
     envVars:
