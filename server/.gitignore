@@ -1,4 +1,5 @@
 node_modules/
-uploads/
+# Uploaded files only (not src/modules/uploads source code)
+/uploads/
 .env
 *.log
